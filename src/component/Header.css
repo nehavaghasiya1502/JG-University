@@ -1,0 +1,39 @@
+.pages {
+  font-family: 'Open Sans', sans-serif !important;
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  letter-spacing: 0.5px;
+  text-transform: capitalize !important;
+}
+.pages:hover{
+    background-color: white;
+    color: #97101E;
+    transition: all 0.3s ease;
+}
+
+.admission-btn.MuiButton-root {
+    background-color: #F9B131 !important;
+    color: black !important;
+    border-radius: 5px !important;
+    border: 1px solid transparent !important;
+    padding: 9px 26px !important;
+    text-transform: none !important;
+    font-family: 'Open Sans', sans-serif !important;
+    transition: all 0.3s ease;
+}
+
+.admission-btn.MuiButton-root:hover {
+    background-color: white !important;
+    border: 1px solid #F9B131 !important;
+    color: #F9B131 !important;
+}
+
+.search-input input {
+    width: 100px !important;
+    background: white !important;
+    border: none !important;
+    outline: none !important;
+    border-radius: 50px !important;
+    font-family: 'Poppins', sans-serif !important;
+    padding: 8px 8px; 
+}

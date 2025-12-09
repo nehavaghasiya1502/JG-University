@@ -1,0 +1,12 @@
+*{
+    font-family: 'Poppins', sans-serif !important;
+}
+h2{
+    margin-top: 50px;
+    letter-spacing: 3;
+    word-spacing: 3;
+}
+.body2{
+    text-align: justify;
+    margin-top: 10px;
+}
