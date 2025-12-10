@@ -1,64 +1,103 @@
-import React from 'react';
-import './Introsection.css';
-import { Box, Container, Grid, Typography } from '@mui/material';
+// import React from "react";
+// import './Introsection.css';
+// import { Container } from "@mui/material";
 
-const Introsection = () => {
-    return (
-        <Container maxWidth="lg" sx={{ mt: 8 }}>
-            <Grid container spacing={5} alignItems="center">
+// const IntroSection = () => {
+//   return (
+//     <Container maxWidth="lg" sx={{ mt: 5 }}>
 
-                {/* LEFT SIDE CONTENT */}
-                <Grid item xs={12} md={4}>
-                    <Typography
-                        variant="h3"
-                        fontWeight="600"
-                        lineHeight={1.3}
-                        sx={{ fontSize: { xs: "32px", md: "42px" } }}
-                    >
-                        Welcome to JG University the <br />
-                        Best University in <br />
-                        Ahmedabad
-                    </Typography>
-                    <Typography className='body2'> 
-                        <body2>JG University is a New Age Tech-Driven University offering <br />programmes that evolve as per future industry demand, thus enabling its <br />students to get into employment or self-employment seamlessly. It is <br />a UGC approved University sponsored by the ASIA Charitable Trust, <br />Which has been in the field of education since 1965, successfully <br />managing 17 colleges and 3 schools.</body2>
-                    </Typography>
-                </Grid>
+//       <div style={{ display: "flex", gap: "20px", alignItems: "flex-start" }}>
+        
+//         {/* LEFT TEXT SECTION */}
+//         <div style={{ flex: 1 }}>
+//           <h2>Welcome to JG University the <br /> Best University in <br /> Ahmedabad</h2>
+//           <p>
+//             JG University is a New Age Tech-Driven University offering programmes that evolve as per future industry demand, thus enabling its students to get into employment or self-employment seamlessly. It is a UGC approved University sponsored by the ASIA Charitable Trust, Which has been in the field of education since 1965, successfully managing 17 colleges and 3 schools.
+//           </p>
+//         </div>
 
-                <Grid item xs={12} md={8}>
-                     <Grid container spacing={2}>
+//         {/* RIGHT VIDEOS SECTION */}
+//         <div style={{ flex: 1, display: "flex", gap: "15px" }}>
+          
+//          <iframe width="270" height="280" src="https://www.youtube.com/embed/QuRupPh1kAU?si=3tijTYjTGJ968RCc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-                        {/* LEFT VIDEO */}
-                         <Grid item xs={12} sm={6}>
-                        <iframe
-                            width="100%"
-                            height="260"
-                            src="https://www.youtube.com/embed/QuRupPh1kAU?si=z-AW0A-Qpa3z_P3z"
-                            title="Video 1"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowFullScreen
-                            style={{ borderRadius: "16px" }}
-                        ></iframe>
-                        </Grid>
+//           <iframe width="270" height="280" src="https://www.youtube.com/embed/P5sIw2tbjYQ?si=Lv6KkM0K6ViwPjsf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-                        {/* RIGHT VIDEO */}
-                        <Grid item xs={12} sm={6}>
-                        <iframe
-                            width="100%"
-                            height="260"
-                            src="https://www.youtube.com/embed/P5sIw2tbjYQ?si=pIDCTtUwxjrIK3a6"
-                            title="Video 2"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowFullScreen
-                            style={{ borderRadius: "16px" }}
-                        ></iframe>
-                        </Grid>
+//         </div>
+//       </div>
 
-                   </Grid>
-                </Grid>
+//     </Container>
+//   );
+// };
 
-            </Grid>
-        </Container>
-    );
+// export default IntroSection;
+
+
+import React from "react";
+import "./Introsection.css";
+import { Container } from "@mui/material";
+
+const IntroSection = () => {
+  return (
+    <Container maxWidth="lg" sx={{ mt: 5 }}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",         
+          gap: "20px",
+          alignItems: "flex-start",
+        }}
+      >
+        {/* LEFT TEXT SECTION */}
+        <div style={{ flex: "1 1 300px", minWidth: "300px" }}>
+          <h2>
+            Welcome to JG University the <br /> Best University in <br /> Ahmedabad
+          </h2>
+          <p>
+            JG University is a New Age Tech-Driven University offering programmes
+            that evolve as per future industry demand, thus enabling its students 
+            to get into employment or self-employment seamlessly. It is a UGC 
+            approved University sponsored by the ASIA Charitable Trust, Which has 
+            been in the field of education since 1965, successfully managing 17 colleges 
+            and 3 schools.
+          </p>
+        </div>
+
+        {/* RIGHT VIDEOS SECTION */}
+        <div
+          style={{
+            flex: "1 1 300px",
+            display: "flex",
+            gap: "15px",
+            flexWrap: "wrap",        
+            justifyContent: "center",
+          }}
+        >
+          <iframe
+            width="100%"
+            height="250"
+            style={{ maxWidth: "270px" }}
+            src="https://www.youtube.com/embed/QuRupPh1kAU?si=3tijTYjTGJ968RCc"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+
+          <iframe
+            width="100%"
+            height="250"
+            style={{ maxWidth: "270px" }}
+            src="https://www.youtube.com/embed/P5sIw2tbjYQ?si=Lv6KkM0K6ViwPjsf"
+            title="YouTube video player"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </div>
+      </div>
+    </Container>
+  );
 };
 
-export default Introsection;
+export default IntroSection;

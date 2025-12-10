@@ -18,7 +18,7 @@ body, html {
   object-fit: cover; 
   display: block;
 }
-
+/* 
 .slick-dots li button:before {
   font-size: 10px;
   color: #f7f6f6; 
@@ -32,4 +32,4 @@ body, html {
 
 .slick-dots {
   bottom: 15px; 
-}
+} */

@@ -1,0 +1,10 @@
+ .footer-item {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+ .footer-item:hover{
+    color: brown;
+    transform: translateY(5px);
+ }
+
