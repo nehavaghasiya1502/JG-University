@@ -88,8 +88,8 @@ import icon4 from "../assets/strengthicons/icon4.png";
 
 export default function StrengthsectionMUI() {
   return (
-    <Container maxWidth="lg" disableGutters sx={{ my: 6 }}>
-      <Typography variant="h4" fontWeight={700} sx={{ mb: 5 }}>
+    <Container maxWidth="lg" sx={{ my: 6, mt:15 }}>
+      <Typography variant="h4" fontWeight={700} sx={{fontSize:30, mb: 5 }}>
         Our Strengths
       </Typography>
 
@@ -108,7 +108,7 @@ export default function StrengthsectionMUI() {
                 Interdisciplinary Approach
               </Typography>
               <Typography variant="body2" sx={{ mt: 1 }}>
-                Students from diverse backgrounds connect,ideate,  and   <br /> problems using different conceptual <br /> structures and methods of understanding
+                Students from diverse backgrounds,ideate and   <br /> problems using different conceptual <br /> structures and methods of understanding
               </Typography>
             </Box>
           </Box>
@@ -128,7 +128,7 @@ export default function StrengthsectionMUI() {
                 Innovative Curriculum
               </Typography>
               <Typography variant="body2" sx={{ mt: 1 }}>
-                Exposure to real-life projects to develop hands-on  expertis <br /> Exposure to real-life projects to develop <br /> hands-on expertise
+                Exposure to real-life projects to develop hands-on  <br /> Exposure to real-life projects to develop <br /> hands-on expertise
               </Typography>
             </Box>
           </Box>
@@ -148,7 +148,7 @@ export default function StrengthsectionMUI() {
                 Whole Brain Learning Pedagogy
               </Typography>
               <Typography variant="body2" sx={{ mt: 1 }}>
-                Pedagogy that empower learners to acquire future-proo <br /> technical skills and moulds them into creative <br /> thinkers
+                Pedagogy that empower learners to acquire fu <br /> technical skills and moulds them into creative <br /> thinkers
               </Typography>
             </Box>
           </Box>
@@ -168,7 +168,7 @@ export default function StrengthsectionMUI() {
                 Faculty from Academia & Industry
               </Typography>
               <Typography variant="body2" sx={{ mt: 1 }}>
-                Inspiration by dynamic, brilliant scholars with vast <br /> academic knowledge and real-world experience dynamic
+                Inspiration by dynamic, brilliant scholars with vast <br /> academic knowledge or real-world or experience
               </Typography>
             </Box>
           </Box>

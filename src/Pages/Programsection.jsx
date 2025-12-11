@@ -135,7 +135,7 @@
 
 import React from "react";
 import './Programsection.css';
-import { Container, Grid, Typography, Box } from "@mui/material";
+import { Container, Grid, Typography} from "@mui/material";
 
 import ug from "../assets/programs/p1.png";
 import pg from "../assets/programs/p2.png";
@@ -189,8 +189,8 @@ const programs = [
 
 export default function ProgrammesMUI() {
   return (
-    <Container fixed sx={{ my: 8 }}>
-      <Typography variant="h4" sx={{ fontWeight: 700, mb: 4 }}>
+    <Container fixed sx={{ my: 8 ,mt:15}}>
+      <Typography variant="h4" sx={{ fontWeight: 700,fontSize:30, mb: 4 }}>
         Programmes
       </Typography>
 

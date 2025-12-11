@@ -39,7 +39,7 @@ import { Container } from "@mui/material";
 
 const IntroSection = () => {
   return (
-    <Container maxWidth="lg" sx={{ mt: 5 }}>
+    <Container maxWidth="lg" sx={{ mt: 10 }}>
       <div
         style={{
           display: "flex",

@@ -14,7 +14,7 @@ import slide6 from '../assets/slider/heroslider6.png';
 const Slidersection = () => {
     const settings = {
         dots: false,
-        infinite: true,
+        // infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,

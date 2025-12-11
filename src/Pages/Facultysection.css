@@ -1,0 +1,20 @@
+.faculty-card {
+  opacity: 0.4;
+  transform: scale(0.60);
+  text-align: center !important;
+}
+
+.slick-center .faculty-card {
+  opacity: 1;
+  transform: scale(1.0);
+}
+.faculty-card .faculty-img {
+  margin: auto;
+}
+
+.faculty-card h6,
+.faculty-card p,
+.faculty-card span {
+  text-align: center !important;
+  margin: 0 auto;
+}
