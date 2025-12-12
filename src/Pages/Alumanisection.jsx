@@ -87,6 +87,8 @@ const PrevArrow = ({ onClick }) => {
       sx={{
         position: "absolute",
         right: 80,
+        transform: "translateX(-50%)",
+        // textAlign:"center",
         bottom: 28,
         backgroundColor: "rgb(92, 175, 234)",
         color: "#fff",
@@ -144,7 +146,7 @@ const AlumniTestimonials = () => {
   return (
     <Container maxWidth="lg" sx={{ py: 10, position: "relative" }}>
       <Typography variant="h4" fontWeight="bold" mb={6}>
-        Alumni Testimonials
+       JG Alumni Testimonials
       </Typography>
 
       <Slider {...settings}>
