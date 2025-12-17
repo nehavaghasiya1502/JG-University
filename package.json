@@ -2,9 +2,6 @@
   "name": "jg",
   "version": "0.1.0",
   "private": true,
-
-  "homepage": "https://nehavaghasiya1502.github.io/JG-University",
-
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
@@ -28,10 +25,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-"deploy": "gh-pages -d build"
-
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
