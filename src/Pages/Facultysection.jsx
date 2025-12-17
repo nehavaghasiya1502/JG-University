@@ -191,12 +191,38 @@ const Facultysection = () => {
     slidesToShow: 3,
     speed: 500,
     nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />
+    prevArrow: <PrevArrow />,
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          centerMode: true,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          centerMode: false,
+          arrows: false,
+        },
+      },
+    ],
   };
+
 
   return (
     <Box sx={{ width: "100%", maxWidth: "1100px", margin: "auto", mt: 15 }}>
-      <Typography variant="h4" sx={{ fontWeight: 700,fontSize:30, mb: 4 }}>
+      <Typography variant="h4" sx={{ fontWeight: 700, fontSize: 30, mb: 4 }}>
         Faculty Members
       </Typography>
       <Slider {...settings}>
@@ -220,7 +246,6 @@ const Facultysection = () => {
                 width: "100%",
                 height: "320px",
                 objectFit: "cover",
-                // borderRadius: 2,
                 transition: "0.4s",
               }}
             />

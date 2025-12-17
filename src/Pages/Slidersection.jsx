@@ -10,11 +10,9 @@ import slide4 from '../assets/slider/heroslider4.png';
 import slide5 from '../assets/slider/heroslider5.png';
 import slide6 from '../assets/slider/heroslider6.png';
 
-// react slick npm slider
 const Slidersection = () => {
     const settings = {
         dots: false,
-        // infinite: true,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,

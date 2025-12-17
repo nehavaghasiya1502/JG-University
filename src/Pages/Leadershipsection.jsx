@@ -18,7 +18,6 @@ const Leadershipsection = () => {
           p: 3,
           borderRadius: 2,
           border: "1px solid #7a5aa8",
-          // backgroundColor: "#f7f7f7",
         }}
       >
         <Grid container alignItems="center" justifyContent="space-between" spacing={3}>
@@ -74,7 +73,6 @@ const Leadershipsection = () => {
 
     {/* RIGHT CONTENT */}
     <div className="col-12 col-md-9">
-      {/* Heading + Pipe + Subtitle */}
       <div className="d-flex align-items-center mb-2">
         <h6 className="leader-color fw-medium mb-0">Dr. CA Achyut Dani</h6>
         <p className="mx-2 leader-color">|</p>

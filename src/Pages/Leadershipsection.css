@@ -2,20 +2,6 @@ body {
     font-family: "Poppins", Arial, sans-serif;
 }
 
-/* .box1 {
-    padding: 30px 20px;
-    height: 270px;
-    border: 1px solid #7a5aa8;
-    border-radius: 10px;
-}
-
-.box2 {
-    padding: 30px 20px;
-    height: 550px;
-    border: 1px solid #7a5aa8;
-    border-radius: 10px;
-} */
-
 .box1, .box2 {
   padding: 30px 20px;
   min-height: auto;  
@@ -30,11 +16,6 @@ body {
   border-radius: 10px;
 }
 
-
-h5,
-/* p {
-    color: #7a5aa8;
-} */
  .leader-color{
     color: #7a5aa8;
  }
@@ -55,8 +36,6 @@ span {
     color: #ffffff;
     border-radius: 7px;
     border: 1px solid transparent;
-    /* border: none; */
-    /* outline: none; */
     margin-top: 20px;
 }
 

@@ -101,7 +101,6 @@ function Header() {
             <img src={logo} alt="JG University" style={{ width: 40 }} />
           </Box>
 
-          {/* Space push for menu to right */}
           <Box sx={{ flexGrow: 1 }} />
 
           {/* Desktop Menu */}
@@ -113,7 +112,7 @@ function Header() {
                 className="pages"
                 sx={{ my: 2, color: 'black', display: 'block' }}
               >
-                {page} {/* CSS automatically capitalize karega */}
+                {page} 
               </Button>
             ))}
 

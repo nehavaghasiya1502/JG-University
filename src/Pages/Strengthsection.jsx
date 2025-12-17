@@ -1,82 +1,3 @@
-// import React from "react";
-// import { Container, Grid, Box, Typography } from "@mui/material";
-// import "./Strengthsection.css";
-
-// import icon1 from "../assets/strengthicons/icon1.png";
-// import icon2 from "../assets/strengthicons/icon2.png";
-// import icon3 from "../assets/strengthicons/icon3.png";
-// import icon4 from "../assets/strengthicons/icon4.png";
-
-// const strengths = [
-//   {
-//     icon: icon1,
-//     colorClass: "pink",
-//     title: "Interdisciplinary Approach",
-//     text: "Students from diverse backgrounds connect, ideate, and solve problems using different conceptual structures and methods of understanding",
-//   },
-//   {
-//     icon: icon2,
-//     colorClass: "purple",
-//     title: "Innovative Curriculum",
-//     text: "Exposure to real-life projects to develop hands-on expertise Exposure to real-life projects to develop hands-on expertise",
-//   },
-//   {
-//     icon: icon3,
-//     colorClass: "blue",
-//     title: "Whole Brain Learning Pedagogy",
-//     text: "Pedagogy that empower learners to acquire future-proof technical skills and moulds them into creative thinkers",
-//   },
-//   {
-//     icon: icon4,
-//     colorClass: "yellow",
-//     title: "Faculty from Academia & Industry",
-//     text: "Inspiration by dynamic, brilliant scholars with vast academic knowledge and real-world experience dynamic",
-//   },
-// ];
-
-// export default function StrengthsectionMUI() {
-//   return (
-//     <Container maxWidth="lg" disableGutters sx={{ my: 6 }}>
-//       <Typography variant="h4" fontWeight={700} sx={{ mb: 5 }}>
-//         Our Strengths
-//       </Typography>
-
-//       <Grid container spacing={1}>
-//         {strengths.map((item, index) => (
-//           <Grid item xs={12} sm={6} md={6} key={index}>
-//             <Box
-//               className="box"
-//               sx={{
-//                 display: "flex",
-//                 alignItems: "flex-start",
-//                 p: 3,
-//                 gap: 2,
-//                 borderRadius: 2,
-//                 width: "100%",
-//               }}
-//             >
-//               <Box className={`icon-wrap ${item.colorClass}`}>
-//                 <img src={item.icon} alt={item.title} />
-//               </Box>
-
-//               <Box>
-//                 <Typography variant="h6" fontWeight={600}>
-//                   {item.title}
-//                 </Typography>
-//                 <Typography variant="body2" sx={{ mt: 1 }}>
-//                   {item.text}
-//                 </Typography>
-//               </Box>
-//             </Box>
-//           </Grid>
-//         ))}
-//       </Grid>
-//     </Container>
-//   );
-// }
-
-
-
 import React from "react";
 import { Container, Grid, Box, Typography } from "@mui/material";
 import "./Strengthsection.css";
@@ -88,27 +9,24 @@ import icon4 from "../assets/strengthicons/icon4.png";
 
 export default function StrengthsectionMUI() {
   return (
-    <Container maxWidth="lg" sx={{ my: 6, mt:15 }}>
-      <Typography variant="h4" fontWeight={700} sx={{fontSize:30, mb: 5 }}>
+    <Container maxWidth="lg" sx={{ my: { xs: 4, sm: 6, md: 10 } }}>
+      <Typography variant="h4" fontWeight={700} sx={{ fontSize: { xs: 24, sm: 28, md: 32 }, mb: 5 }}>
         Our Strengths
       </Typography>
 
       <Grid container spacing={3}>
         {/* Box 1 */}
         <Grid item xs={12} sm={6}>
-          <Box
-            className="box"
-            sx={{ display: "flex", alignItems: "flex-start", p: 3, gap: 2, borderRadius: 2 }}
-          >
+          <Box className="strength-box">
             <Box className="icon-wrap pink">
               <img src={icon1} alt="Interdisciplinary Approach" />
             </Box>
-            <Box>
+            <Box className="text-wrap">
               <Typography variant="h6" fontWeight={500}>
                 Interdisciplinary Approach
               </Typography>
-              <Typography variant="body2" sx={{ mt: 1 }}>
-                Students from diverse backgrounds,ideate and   <br /> problems using different conceptual <br /> structures and methods of understanding
+              <Typography variant="body2">
+                Students from a wide range of backgrounds connect.
               </Typography>
             </Box>
           </Box>
@@ -116,19 +34,16 @@ export default function StrengthsectionMUI() {
 
         {/* Box 2 */}
         <Grid item xs={12} sm={6}>
-          <Box
-            className="box"
-            sx={{ display: "flex", alignItems: "flex-start", p: 3, gap: 2, borderRadius: 2 }}
-          >
+          <Box className="strength-box">
             <Box className="icon-wrap purple">
-              <img src={icon2} alt="Innovative Curriculum" />
+              <img src={icon2} alt="Immersive & Experiential Learning" />
             </Box>
-            <Box>
+            <Box className="text-wrap">
               <Typography variant="h6" fontWeight={500}>
-                Innovative Curriculum
+                Immersive & Experiential Learning
               </Typography>
-              <Typography variant="body2" sx={{ mt: 1 }}>
-                Exposure to real-life projects to develop hands-on  <br /> Exposure to real-life projects to develop <br /> hands-on expertise
+              <Typography variant="body2">
+                Exposure to real-life projects to develop hands-on.
               </Typography>
             </Box>
           </Box>
@@ -136,19 +51,16 @@ export default function StrengthsectionMUI() {
 
         {/* Box 3 */}
         <Grid item xs={12} sm={6}>
-          <Box
-            className="box"
-            sx={{ display: "flex", alignItems: "flex-start", p: 3, gap: 2, borderRadius: 2 }}
-          >
+          <Box className="strength-box">
             <Box className="icon-wrap blue">
               <img src={icon3} alt="Whole Brain Learning Pedagogy" />
             </Box>
-            <Box>
+            <Box className="text-wrap">
               <Typography variant="h6" fontWeight={500}>
                 Whole Brain Learning Pedagogy
               </Typography>
-              <Typography variant="body2" sx={{ mt: 1 }}>
-                Pedagogy that empower learners to acquire fu <br /> technical skills and moulds them into creative <br /> thinkers
+              <Typography variant="body2">
+                Pedagogy to empowers learners acquire future-proof.
               </Typography>
             </Box>
           </Box>
@@ -156,19 +68,16 @@ export default function StrengthsectionMUI() {
 
         {/* Box 4 */}
         <Grid item xs={12} sm={6}>
-          <Box
-            className="box"
-            sx={{ display: "flex", alignItems: "flex-start", p: 3, gap: 2, borderRadius: 2 }}
-          >
+          <Box className="strength-box">
             <Box className="icon-wrap yellow">
               <img src={icon4} alt="Faculty from Academia & Industry" />
             </Box>
-            <Box>
+            <Box className="text-wrap">
               <Typography variant="h6" fontWeight={500}>
                 Faculty from Academia & Industry
               </Typography>
-              <Typography variant="body2" sx={{ mt: 1 }}>
-                Inspiration by dynamic, brilliant scholars with vast <br /> academic knowledge or real-world or experience
+              <Typography variant="body2">
+                Inspiration by dynamic, brilliant scholars with too.
               </Typography>
             </Box>
           </Box>
@@ -177,4 +86,3 @@ export default function StrengthsectionMUI() {
     </Container>
   );
 }
-

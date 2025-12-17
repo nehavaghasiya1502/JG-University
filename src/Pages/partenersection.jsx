@@ -15,16 +15,44 @@ import part9 from "../assets/parteners/part9.png";
 import part10 from "../assets/parteners/part10.png";
 
 const PartnersSlider = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: false,
-  };
+const settings = {
+  dots: false,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 5,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: false,
+
+  responsive: [
+    {
+      breakpoint: 1200, 
+      settings: {
+        slidesToShow: 4,
+      },
+    },
+    {
+      breakpoint: 900,
+      settings: {
+        slidesToShow: 3,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+};
+
 
   const imgs = [
     part1, part2, part3, part4, part5,
@@ -32,27 +60,28 @@ const PartnersSlider = () => {
   ];
 
   return (
-    <Container maxWidth="lg">
-      <h2><b>Partners</b></h2>
+   <Container maxWidth="lg" sx={{ my: { xs: 4, md: 6 } }}>
+  <h2 style={{  marginBottom: "20px" }}>
+    <b>Partners</b>
+  </h2>
 
-      <Box
-        sx={{
-          mt: 2,
-          mb: 5,
-          p: 3,
-          borderRadius: "12px",
-          border: "2px solid #e0e0e0",
-        }}
-      >
-        <Slider {...settings}>
-          {imgs.map((img, i) => (
-            <div key={i} className="partner-slide">
-              <img src={img} alt="Partner Logo" className="partner-img" />
-            </div>
-          ))}
-        </Slider>
-      </Box>
-    </Container>
+  <Box
+    sx={{
+      p: { xs: 1.5, sm: 2, md: 3 },
+      borderRadius: "12px",
+      border: "2px solid #e0e0e0",
+    }}
+  >
+    <Slider {...settings}>
+      {imgs.map((img, i) => (
+        <div key={i} className="partner-slide">
+          <img src={img} alt="Partner Logo" className="partner-img" />
+        </div>
+      ))}
+    </Slider>
+  </Box>
+</Container>
+
   );
 };
 

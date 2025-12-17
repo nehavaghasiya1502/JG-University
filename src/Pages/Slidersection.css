@@ -1,35 +1,26 @@
 body, html {
   overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
 .my-slider {
   width: 100%;
   overflow: hidden;
 }
+
 .my-slider .slick-list,
 .my-slider .slick-track,
 .my-slider .slick-slide,
 .my-slider .slick-slide > div {
-  height: 800px !important;
+  height: auto !important; 
 }
+
 .my-slider img {
-   width: 100%;          
-  height: 100%;        
+  width: 100%;
+  height: auto;
+  max-height: 90vh; 
   object-fit: cover; 
   display: block;
 }
-/* 
-.slick-dots li button:before {
-  font-size: 10px;
-  color: #f7f6f6; 
-  opacity: 0.8;
-}
 
-.slick-dots li.slick-active button:before {
-  color: #0d0d0d; 
-  opacity: 1;
-}
-
-.slick-dots {
-  bottom: 15px; 
-} */
